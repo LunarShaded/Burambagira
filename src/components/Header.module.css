@@ -1,0 +1,59 @@
+:root{
+   --main-text-color:rgb(0, 0, 0);
+   --text-hover-color:rgb(255, 0, 0);
+   --second-text-color:rgba(0, 0, 0, 0.748);
+}
+
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headerSection{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 20px;
+}
+
+.headerTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.headerTitle h3{
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+.headerTitle p{
+    font-weight: 500;
+    color: var(--second-text-color);
+}
+
+.nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    transition: 0.2s ease;
+}
+
+.nav ul li a:hover{
+    color: var(--text-hover-color);
+}
