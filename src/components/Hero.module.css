@@ -1,0 +1,144 @@
+:root{
+    --background-color: rgb(224, 77, 77);
+    --background-gradient-color:rgb(212, 82, 82);
+    --main-text-color:rgb(255, 255, 255);
+    --second-text-color:rgba(255, 255, 255, 0.9);
+    --bacground-card-color:rgb(250, 131, 131);
+}
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heroSection{
+    background: linear-gradient(90deg, var(--background-color), var(--background-gradient-color));
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContent{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.heroTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.heroTitle h1{
+    font-size: clamp(26px, 5vw, 36px);
+    color: var(--main-text-color);
+}
+
+.heroTitle p{
+    font-size: clamp(18px, 3vw, 24px);
+    color: var(--second-text-color);
+}
+
+.heroMainContent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--main-text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heroMainContent p{
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.bottomTitle{
+    margin-top: 35px;
+    background: var(--bacground-card-color);
+    align-self: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.bottomTitle p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .heroContent{
+        padding-top: 100px;
+        gap: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .heroTitle h1{
+        font-size: 30px;
+    }
+
+    .heroTitle p{
+        font-size: 20px;
+    }
+
+    .heroMainContent p{
+        font-size: 18px;
+    }
+
+    .bottomTitle{
+        padding: 16px;
+    }
+
+    .bottomTitle p{
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .heroContent{
+        padding-top: 80px;
+        gap: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .heroTitle h1{
+        font-size: 26px;
+    }
+
+    .heroTitle p{
+        font-size: 18px;
+    }
+
+    .heroMainContent{
+        gap: 20px;
+    }
+
+    .heroMainContent p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .bottomTitle{
+        margin-top: 20px;
+        padding: 14px;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .bottomTitle p{
+        font-size: 20px;
+    }
+}
