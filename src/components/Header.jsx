@@ -7,7 +7,7 @@ export default function Header(){
           <section className={styles.headerSection}>
             <div className={styles.headerTitle}>
                   <h3>Burambagira</h3>
-                  <p>High School</p>
+                  <p>Secondary School</p>
             </div>
 
          <nav>
